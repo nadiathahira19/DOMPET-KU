@@ -11,5 +11,10 @@ func main() {
 
 	r.POST("/auth/register", registerHandler)
 	r.POST("/auth/login", loginHandler)
+
+	protected := r.Group("/")
+	protected.Use(authMiddleware())
+	protected.GET("/me", meHandler)
+
 	r.Run(":8080")
 }
