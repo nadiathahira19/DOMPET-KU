@@ -1,0 +1,15 @@
+package main
+
+import "github.com/gin-gonic/gin"
+
+func main() {
+	if err := initDB(); err != nil {
+		panic(err)
+	}
+
+	r := gin.Default()
+
+	r.POST("/auth/register", registerHandler)
+	r.POST("/auth/login", loginHandler)
+	r.Run(":8080")
+}
