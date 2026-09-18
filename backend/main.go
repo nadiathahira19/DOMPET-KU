@@ -16,5 +16,10 @@ func main() {
 	protected.Use(authMiddleware())
 	protected.GET("/me", meHandler)
 
+	protected.GET("/categories", listCategoriesHandler)
+	protected.POST("/categories", createCategoryHandler)
+	protected.PUT("/categories/:id", updateCategoryHandler)
+	protected.DELETE("/categories/:id", deleteCategoryHandler)
+
 	r.Run(":8080")
 }
