@@ -1,1 +1,1 @@
-# DOMPET-KU
+# DOMPET-KU - Personal Expense Tracker
