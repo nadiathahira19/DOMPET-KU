@@ -1,1 +1,1 @@
-# DOMPET-KU - Personal Expense Tracker
+# DOMPET-KU - Personal Expense Tracker (Aplikasi Catatan Keuangan)
