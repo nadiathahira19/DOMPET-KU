@@ -1,1 +1,1 @@
-# DOMPET-KU
+# DOMPET-KU - Aplikasi Catatan Keuangan
