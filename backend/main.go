@@ -20,6 +20,10 @@ func main() {
 	protected.POST("/categories", createCategoryHandler)
 	protected.PUT("/categories/:id", updateCategoryHandler)
 	protected.DELETE("/categories/:id", deleteCategoryHandler)
-
+	protected.GET("/transactions", listTransactionsHandler)
+	protected.POST("/transactions", createTransactionHandler)
+	protected.GET("/transactions/:id", getTransactionHandler)
+	protected.PUT("/transactions/:id", updateTransactionHandler)
+	protected.DELETE("/transactions/:id", deleteTransactionHandler)
 	r.Run(":8080")
 }
