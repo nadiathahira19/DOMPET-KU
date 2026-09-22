@@ -25,5 +25,8 @@ func main() {
 	protected.GET("/transactions/:id", getTransactionHandler)
 	protected.PUT("/transactions/:id", updateTransactionHandler)
 	protected.DELETE("/transactions/:id", deleteTransactionHandler)
+	protected.GET("/summary", summaryHandler)
+	protected.GET("/summary/by-category", summaryByCategoryHandler)
+
 	r.Run(":8080")
 }
